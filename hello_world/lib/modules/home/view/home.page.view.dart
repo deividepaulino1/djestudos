@@ -15,12 +15,13 @@ class Tela1 extends StatefulWidget {
 HomeController homeController = HomeController();
 
 List<void Function()> funcoes = [
+  homeController.daniel(),
+  homeController.deivide,
+  homeController.jorge,
+  homeController.deivide,
+  homeController.lucas,
   homeController.deivide,
   homeController.anderson,
-  homeController.deivide,
-  homeController.deivide,
-  homeController.deivide,
-  homeController.deivide,
   homeController.deivide,
 ];
 
@@ -34,7 +35,7 @@ class _Tela1State extends State<Tela1> {
           children: List.generate(
             7,
             (index) => BotaoPressetWidget(
-              titulo: 'Botão $index',
+              titulo: 'Botão ${nomes[index]}',
               onPressed: () => funcoes[index](),
             ),
           ),
