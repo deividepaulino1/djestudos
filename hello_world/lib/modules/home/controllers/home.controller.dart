@@ -1,3 +1,4 @@
+import 'package:hello_world/modules/home/controllers/alunos/anderson.dart';
 import 'package:hello_world/modules/home/controllers/alunos/andrew.dart';
 import 'package:hello_world/modules/home/controllers/alunos/daniel.dart';
 import 'package:hello_world/modules/home/controllers/alunos/deivide.dart';
@@ -9,6 +10,7 @@ import 'alunos/mario.kart.dart';
 
 class HomeController {
   DeivideActions deivideActions = DeivideActions();
+  AndersonAction andersonAction = AndersonAction();
   AndrewActions andrewActions = AndrewActions();
   Estudos estudos = Estudos();
   JorgeActions jorgeActions = JorgeActions();
@@ -21,6 +23,10 @@ class HomeController {
   deivide() {
     deivideActions.eat();
     deivideActions.heRun();
+  }
+
+  anderson() {
+    andersonAction.play();
   }
 
   andrew() {

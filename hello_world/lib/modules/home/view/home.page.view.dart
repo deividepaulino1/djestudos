@@ -21,17 +21,8 @@ List<void Function()> funcoes = [
   homeController.deivide,
   homeController.lucas,
   homeController.deivide,
+  homeController.anderson,
   homeController.deivide,
-];
-
-List<String> nomes = [
-  'Mario',
-  'Lucas',
-  'Jorge',
-  'Anderson',
-  'Daniel',
-  'Andrew',
-  'Isa',
 ];
 
 class _Tela1State extends State<Tela1> {
