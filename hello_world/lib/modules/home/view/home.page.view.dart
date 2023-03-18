@@ -15,7 +15,7 @@ class Tela1 extends StatefulWidget {
 HomeController homeController = HomeController();
 
 List<void Function()> funcoes = [
-  homeController.deivide,
+  homeController.daniel(),
   homeController.deivide,
   homeController.jorge,
   homeController.deivide,
