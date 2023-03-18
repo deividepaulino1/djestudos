@@ -24,6 +24,16 @@ List<void Function()> funcoes = [
   homeController.deivide,
 ];
 
+List<String> nomes = [
+  'Mario',
+  'Lucas',
+  'Jorge',
+  'Anderson',
+  'Daniel',
+  'Andrew',
+  'Isa',
+];
+
 class _Tela1State extends State<Tela1> {
   @override
   Widget build(BuildContext context) {
@@ -34,7 +44,7 @@ class _Tela1State extends State<Tela1> {
           children: List.generate(
             7,
             (index) => BotaoPressetWidget(
-              titulo: 'Botão $index',
+              titulo: 'Botão ${nomes[index]}',
               onPressed: () => funcoes[index](),
             ),
           ),
