@@ -16,7 +16,7 @@ HomeController homeController = HomeController();
 
 List<void Function()> funcoes = [
   homeController.deivide,
-  homeController.deivide,
+  homeController.lucas,
   homeController.deivide,
   homeController.deivide,
   homeController.deivide,
