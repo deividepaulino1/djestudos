@@ -1,5 +1,5 @@
 class AndrewActions {
-	greetStudentsNames() {
+	greetStudents() {
 		List<String> names = [
 			'Mario',
 			'Lucas',

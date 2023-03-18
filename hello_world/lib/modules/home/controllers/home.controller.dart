@@ -11,6 +11,6 @@ class HomeController {
   }
 
 	andrew() {
-		andrewActions.greetStudentsNames();
+		andrewActions.greetStudents();
 	}
 }
