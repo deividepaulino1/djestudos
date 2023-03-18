@@ -1,11 +1,11 @@
 import 'package:hello_world/modules/home/controllers/alunos/deivide.dart';
 
 class HomeController {
-  DeivideActions deivideActions = DeivideActions();
+  JorgeActions jorgeActions = JorgeActions();
 
   //funcoes dos alunos
-  deivide() {
-    deivideActions.eat();
-    deivideActions.heRun();
+  jorge() {
+    jorgeActions.play();
+    jorgeActions.play2();
   }
 }
