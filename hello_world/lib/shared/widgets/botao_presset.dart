@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
 class BotaoPressetWidget extends StatefulWidget {
-  const BotaoPressetWidget({super.key});
+  final void Function() onPressed;
+  final String titulo;
+  final Color cor;
+  const BotaoPressetWidget({
+    super.key,
+    required this.onPressed,
+    required this.titulo,
+    this.cor = Colors.blue,
+  });
 
   @override
   State<BotaoPressetWidget> createState() => _BotaoPressetWidgetState();
@@ -11,17 +19,12 @@ class _BotaoPressetWidgetState extends State<BotaoPressetWidget> {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            duration: Duration(seconds: 1),
-            backgroundColor: Colors.green,
-            content: Text('Olá, mundo!'),
-          ),
-        );
-      },
-      child: const Text(
-        'Clique aqui',
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(widget.cor),
+      ),
+      onPressed: widget.onPressed,
+      child: Text(
+        widget.titulo,
       ),
     );
   }

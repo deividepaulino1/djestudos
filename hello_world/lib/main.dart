@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'modules/home/view/home.page.view.dart';
+
 void main() {
   runApp(const PrimeiroAplicativo());
 }
@@ -17,26 +19,6 @@ class PrimeiroAplicativo extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       home: const Tela1(title: 'Primeiro app dvd'),
-    );
-  }
-}
-
-class Tela1 extends StatefulWidget {
-  const Tela1({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<Tela1> createState() => _Tela1State();
-}
-
-class _Tela1State extends State<Tela1> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(),
-      ),
     );
   }
 }
